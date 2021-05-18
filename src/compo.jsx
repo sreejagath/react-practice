@@ -1,7 +1,7 @@
 import React from 'react'
 
-function compo(props) {
-    const {title,count}=props
+function compo({title,count}) {
+    
     return (
         <div>
             <h1>{title} : {count}</h1>

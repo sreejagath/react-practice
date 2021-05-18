@@ -9,11 +9,16 @@ function App() {
     setCount(count+1)
     console.log(count);
   }
+  let obj ={
+    title:'Number',
+    count
+  }
   return (
     <div className ='hello'>
-    <button onClick={addCount}>Add</button>
-    <Counter title='1st counter' count={count}/>
-    <Counter title='2nd counter' count={count+1}/>
+    
+    <Counter {...obj}/>
+    <Counter title='Square' count={count*count}/>
+    <center><button onClick={addCount}>Click</button></center>
     </div>
   );
 }
